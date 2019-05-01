@@ -1,0 +1,9 @@
+D:\it\PAS\IAS_PAS\ias.dal\bin\Debug\netstandard2.0\ias.dal.deps.json
+D:\it\PAS\IAS_PAS\ias.dal\bin\Debug\netstandard2.0\ias.dal.dll
+D:\it\PAS\IAS_PAS\ias.dal\bin\Debug\netstandard2.0\ias.dal.pdb
+D:\it\PAS\IAS_PAS\ias.dal\obj\Debug\netstandard2.0\ias.dal.csprojAssemblyReference.cache
+D:\it\PAS\IAS_PAS\ias.dal\obj\Debug\netstandard2.0\ias.dal.csproj.CoreCompileInputs.cache
+D:\it\PAS\IAS_PAS\ias.dal\obj\Debug\netstandard2.0\ias.dal.AssemblyInfoInputs.cache
+D:\it\PAS\IAS_PAS\ias.dal\obj\Debug\netstandard2.0\ias.dal.AssemblyInfo.cs
+D:\it\PAS\IAS_PAS\ias.dal\obj\Debug\netstandard2.0\ias.dal.dll
+D:\it\PAS\IAS_PAS\ias.dal\obj\Debug\netstandard2.0\ias.dal.pdb
