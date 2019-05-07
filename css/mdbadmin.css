@@ -1,0 +1,367 @@
+/* Actual code example */
+.form-group-limit {
+  max-width: 200px;
+}
+
+
+.mdb-form-field {
+  display: block;
+  margin-bottom: 16px;
+}
+.mdb-bgcolor{
+  background: #eee;
+}
+.form-field--is-active .form-field__control::after {
+  border-bottom: 2px solid #b11adc;
+  transform: scaleX(150);
+}
+.form-field--is-active .form-field__label {
+  color: #b11adc;
+  font-size: 10px;
+  transform: translateY(-14px);
+  top: -5px;
+}
+.form-field--is-filled .form-field__label {
+  font-size: 10px;
+  transform: translateY(-14px);
+  top: -5px;
+  color: #b11adc;
+}
+.form-field__label {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  left: 0;
+  margin: 0;
+  padding: 24px 12px 0 5px;
+  position: absolute;
+  top: 0;
+  transition: all 0.4s;
+  width: 100%;
+  pointer-events: none;
+}
+.form-field__control {
+  /* background: #eee; */
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.form-field__control::after {
+  border-bottom: 2px solid #b11adc;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  transform: scaleX(0);
+  transition: all 0.4s;
+  width: 1%;
+}
+.form-field__input{
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #999;
+  color: #333;
+  display: block;
+  font-size: 12px;
+  margin-top: 24px;
+  outline: 0;
+  padding: 0 10px 10px 5px;
+  width: 100%;
+}
+
+.form-field__input.inline-input{
+  margin-top: 0;
+}
+
+.form-field__textarea {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #999;
+  color: #333;
+  display: block;
+  font-size: 12px;
+  margin-top: 40px;
+  outline: 0;
+  padding: 0 10px 10px 5px;
+  width: 100%;
+}
+
+.form-field__textarea {
+  height: 100px;
+}
+.form-field__control.mdb-bgcolor label.form-field__label {
+  padding-left: 15px;
+  top: 3px;
+}
+.form-field__control.mdb-bgcolor .form-field__textarea {
+  padding-left: 15px;
+}
+
+
+
+/* RADIO BUTTON */
+.mdblblradio {
+  display: block;
+  font-size: 12px;
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.mdblblradio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Hide the browser's default Radio */
+.mdblblradio .checklbl {
+  font-weight: normal;
+  position: relative;
+  top: 1px;
+}
+
+/* Create a custom radio button */
+.mdblblradio .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.mdblblradio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.mdblblradio input:checked ~ .checkmark {
+  background-color: #fff;
+  border: 1px solid #1F7193;
+  border-radius: 50%;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.mdblblradio .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.mdblblradio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.mdblblradio .checkmark:after {
+ 	top: 2px;
+	left: 2px;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #1F7193;
+}
+
+
+
+/* CHECKBOXES */
+.mdblbl {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  /* font-size: 22px; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.mdblbl input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* vertically align text label checbox*/
+.mdblbl span.checklbl {
+  top: 2px;
+  position: relative;
+  font-weight: normal;
+}
+/* Create a custom checkbox */
+.mdblbl .mdbcheckmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.mdblbl:hover input ~ .mdbcheckmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.mdblbl input:checked ~ .mdbcheckmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.mdblbl .mdbcheckmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.mdblbl input:checked ~ .mdbcheckmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.mdblbl .mdbcheckmark:after {
+  left: 8px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* MDB TABLES */
+.mdb-table-overflow{
+  position: relative;
+  overflow-x: scroll;
+}
+.mdb-table{
+  position: relative;
+    border: 1px solid rgba(0,0,0,.12);
+    /* border-collapse: collapse; */
+    /* white-space: nowrap; */
+    font-size: 13px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+/* 
+.mdb-table thead{
+  padding-bottom: 3px;
+}
+
+.mdb-table tbody tr {
+  position: relative;
+  height: 48px;
+} */
+.mdb-table th {
+  vertical-align: bottom;
+  text-overflow: ellipsis;
+  font-weight: 700;
+  line-height: 24px;
+  height: 44px;
+  letter-spacing: 0;
+  font-size: 12px;
+  color: rgba(0,0,0,.54);
+  padding-bottom: 8px;
+}
+
+
+
+
+
+/* Actual code example */
+/* 
+.form-group-limit {
+  max-width: 200px;
+}
+
+.mdb-form-field {
+  display: block;
+  margin-bottom: 16px;
+}
+.form-field--is-active .form-field__control::after {
+  border-bottom: 2px solid #b11adc;
+  transform: scaleX(150);
+}
+.form-field--is-active .form-field__label {
+  color: #b11adc;
+  font-size: 12px;
+  transform: translateY(-14px);
+}
+.form-field--is-filled .form-field__label {
+  font-size: 12px;
+  transform: translateY(-14px);
+}
+.form-field__label {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  left: 0;
+  margin: 0;
+  padding: 18px 12px 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.4s;
+  width: 100%;
+  pointer-events: none;
+}
+.form-field__control {
+  background: #eee;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.form-field__control::after {
+  border-bottom: 2px solid #b11adc;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  transform: scaleX(0);
+  transition: all 0.4s;
+  width: 1%;
+}
+.form-field__input, .form-field__textarea {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #999;
+  color: #333;
+  display: block;
+  font-size: 12px;
+  margin-top: 24px;
+  outline: 0;
+  padding: 0 12px 10px 12px;
+  width: 100%;
+}
+.form-field__textarea {
+  height: 150px;
+} */
